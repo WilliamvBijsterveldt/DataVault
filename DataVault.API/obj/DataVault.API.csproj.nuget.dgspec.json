@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wvanb\\RiderProjects\\DataVault.API\\DataVault.API\\DataVault.API.csproj": {}
+    "C:\\Users\\wvanb\\source\\repos\\DataVault\\DataVault.API\\DataVault.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wvanb\\RiderProjects\\DataVault.API\\DataVault.API\\DataVault.API.csproj": {
+    "C:\\Users\\wvanb\\source\\repos\\DataVault\\DataVault.API\\DataVault.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wvanb\\RiderProjects\\DataVault.API\\DataVault.API\\DataVault.API.csproj",
+        "projectUniqueName": "C:\\Users\\wvanb\\source\\repos\\DataVault\\DataVault.API\\DataVault.API.csproj",
         "projectName": "DataVault.API",
-        "projectPath": "C:\\Users\\wvanb\\RiderProjects\\DataVault.API\\DataVault.API\\DataVault.API.csproj",
+        "projectPath": "C:\\Users\\wvanb\\source\\repos\\DataVault\\DataVault.API\\DataVault.API.csproj",
         "packagesPath": "C:\\Users\\wvanb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wvanb\\RiderProjects\\DataVault.API\\DataVault.API\\obj\\",
+        "outputPath": "C:\\Users\\wvanb\\source\\repos\\DataVault\\DataVault.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -62,6 +62,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.17, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.11, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

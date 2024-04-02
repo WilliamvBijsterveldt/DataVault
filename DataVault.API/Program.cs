@@ -10,7 +10,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<UserDBContext>(
-    o => o.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection")));
+    o => o.UseNpgsql(builder.Configuration.GetConnectionString("DbConnection"), 
+        o => o.EnableRetryOnFailure(5, TimeSpan.FromSeconds(10), null )));
 
 var app = builder.Build();
 
