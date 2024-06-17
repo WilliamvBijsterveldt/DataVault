@@ -7,6 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Azure.Identity" Version="1.11.4" />
+        <PackageReference Include="Azure.Storage.blobs" Version="12.20.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.8" />
         <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.17" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.17" />

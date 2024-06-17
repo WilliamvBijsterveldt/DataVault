@@ -144,7 +144,6 @@ C:\Users\wvanb\source\repos\DataVault\DataVault.API\obj\Debug\net7.0\staticwebas
 C:\Users\wvanb\source\repos\DataVault\DataVault.API\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\wvanb\source\repos\DataVault\DataVault.API\obj\Debug\net7.0\staticwebassets.development.json
 C:\Users\wvanb\source\repos\DataVault\DataVault.API\obj\Debug\net7.0\scopedcss\bundle\DataVault.API.styles.css
-C:\Users\wvanb\source\repos\DataVault\DataVault.API\obj\Debug\net7.0\DataVault.API.csproj.CopyComplete
 C:\Users\wvanb\source\repos\DataVault\DataVault.API\obj\Debug\net7.0\DataVault.API.dll
 C:\Users\wvanb\source\repos\DataVault\DataVault.API\obj\Debug\net7.0\refint\DataVault.API.dll
 C:\Users\wvanb\source\repos\DataVault\DataVault.API\obj\Debug\net7.0\DataVault.API.pdb
@@ -152,3 +151,9 @@ C:\Users\wvanb\source\repos\DataVault\DataVault.API\obj\Debug\net7.0\DataVault.A
 C:\Users\wvanb\source\repos\DataVault\DataVault.API\obj\Debug\net7.0\ref\DataVault.API.dll
 C:\Users\wvanb\source\repos\DataVault\DataVault.API\bin\Debug\net7.0\Npgsql.dll
 C:\Users\wvanb\source\repos\DataVault\DataVault.API\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\wvanb\source\repos\DataVault\DataVault.API\bin\Debug\net7.0\Azure.Storage.Blobs.dll
+C:\Users\wvanb\source\repos\DataVault\DataVault.API\bin\Debug\net7.0\Azure.Storage.Common.dll
+C:\Users\wvanb\source\repos\DataVault\DataVault.API\bin\Debug\net7.0\System.ClientModel.dll
+C:\Users\wvanb\source\repos\DataVault\DataVault.API\bin\Debug\net7.0\System.IO.Hashing.dll
+C:\Users\wvanb\source\repos\DataVault\DataVault.API\obj\Debug\net7.0\DataVault.API.sourcelink.json
+C:\Users\wvanb\source\repos\DataVault\DataVault.API\obj\Debug\net7.0\DataVaul.F141F227.Up2Date
