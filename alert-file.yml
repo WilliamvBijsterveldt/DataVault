@@ -1,0 +1,10 @@
+groups:
+  - name: datavault_alerts
+    rules:
+      - alert: HighResponseTime
+        expr: rate(http_request_duration_seconds_sum{controller="Filehandler"}[1m]) / rate(http_request_duration_seconds_count{controller="Filehandler"}[1m]) > 1
+        labels:
+          severity: critical
+        annotations:
+          summary: "High response time detected"
+          description: "Response time is higher than 1 second."
