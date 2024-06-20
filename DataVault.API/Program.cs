@@ -1,6 +1,8 @@
 using DataVault.API.Data;
 using DataVault.API.Logic;
 using Microsoft.EntityFrameworkCore;
+using OpenTelemetry.Metrics;
+using Prometheus;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,10 +26,20 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+app.UseMetricServer();
+
+app.UseRouting();
+
+app.UseHttpMetrics(options =>
+{
+ options.AddCustomLabel("host", context => context.Request.Host.Host);
+});
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+});
 
 app.UseAuthorization();
-
-app.MapControllers();
 
 app.Run();
