@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace DataVault.API.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class FileHandlerController : Controller
 {
 

@@ -1,4 +1,8 @@
 version: '3.9'
+
+networks:
+ backend:
+
 services:
   db:
     container_name: postgres
@@ -11,6 +15,19 @@ services:
       - POSTGRES_DB=postgres
     volumes:
       - pgdata:/var/lib/postgresql/data
+  FileHandlerAPI:
+    container_name: fileHandler-api
+    image: williamvbijsterveldt/datavault.api
+    networks:
+      - backend
+  apigateway:
+    container_name: api-gateway
+    image: williamvbijsterveldt/datavaultocelotgateway
+    networks:
+      - backend
+    ports:
+      - 8001:80
+
 
 volumes:
   pgdata:

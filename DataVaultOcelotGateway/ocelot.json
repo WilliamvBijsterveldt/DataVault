@@ -1,0 +1,33 @@
+﻿{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/FileHandler",
+      "UpstreamHttpMethod": ["Get", "Post", "Put"],
+      
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "FileHandlerApi",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/api/FileHandler"
+    },
+    {
+      "UpstreamPathTemplate": "/api/FileHandler/{filename}",
+      "UpstreamHttpMethod": ["Get", "Delete"],
+      
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "FileHandlerApi",
+          "Port": 80
+        }
+      ],
+      "DownstreamPathTemplate": "/api/FileHandler/{filename}"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:800"
+  }
+}
