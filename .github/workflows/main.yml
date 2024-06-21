@@ -8,7 +8,7 @@ on:
 
 jobs:
   zap_scan:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     name: Scan the web application
     steps:
       - name: Checkout
