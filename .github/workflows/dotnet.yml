@@ -50,4 +50,4 @@ jobs:
           format: openapi
           target: 'http://localhost:8080/FileHandler'
           rules_file_name: '.zap/rules.tsv'
-          cmd_options: '-a'
+          cmd_options: '-a port 8090:8090'
