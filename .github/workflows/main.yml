@@ -7,14 +7,10 @@ on:
     branches: [ "master" ]
 
 jobs:
-  build:
-
-    runs-on: self-hosted
-
-  zap_scan:
-    runs-on: ubuntu-latest
-    name: Scan the webapplication
-    steps:
+    zap_scan:
+      runs-on: self-hosted
+      name: Scan the webapplication
+      steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
