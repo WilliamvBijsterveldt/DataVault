@@ -32,3 +32,18 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+      
+  scans:
+    runs-on: ubuntu-latest
+    name: OWASP zap
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Log current directory
+        run: echo ${pwd}
+      - name: pull OWASP ZAP image
+        run: docker pull owasp/zap2docker-weekly
+      - name: Run ZAP API scan
+        run: |
+          sudo docker run -v {pwd}:/zap/wrk/:rw - owasp/zap2docker-weekly zap-api-scan.py -t openapi.json -f openapi -c api-scan.conf
