@@ -51,3 +51,4 @@ jobs:
           target: 'http://localhost:8080/FileHandler'
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a -p 8090:8090'
+          artifact_name: 'zap_scan'
